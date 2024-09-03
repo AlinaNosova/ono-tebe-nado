@@ -1,5 +1,7 @@
 .body {
     font-family: Raleway, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /*СТИЛИ ХЕДЕРА*/
@@ -113,7 +115,7 @@
     display: flex;
     position: relative;
     gap: 12.5px;
-    height: 563px;
+    min-height: 563px;
     margin-right: 24px;
     margin-left: 24px;
 }
