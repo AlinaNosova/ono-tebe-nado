@@ -12,37 +12,41 @@
 
   <body>
     <header class="header">
-      <ul class="menu">
-        <p>главная</p>
-        <li><a href="#">посмотреть лоты</a></li>
-        <li><a href="#">об аукционе</a></li>
-      </ul>
+      <nav>
+        <ul class="menu">
+          <li class="active_point"><a class="no_underline" href="#">главная</a></li>
+          <li><a href="#">посмотреть лоты</a></li>
+          <li><a href="#">об аукционе</a></li>
+        </ul>
+      </nav>
 
-      <img class="logo" src="images/logo-black.svg" alt="логотип" />
+      <a href="#"><img class="logo" src="images/logo-black.svg" alt="логотип" /></a>
 
-      <adress class="contacts">
-        <a href="tel:+70000000">++9 999 555 5555</a>
-        <a href="mailto:mail@example.com">info@sobaka.ge</a>
-        <p>
-          наб. Принсенграхт 263-<br/>
-          265, Амстердам
-        </p>
-      </adress>
+
+        <address class="contacts">
+          <a href="tel:+70000000">+9 999 555 5555</a>
+          <a href="mailto:mail@example.com">info@sobaka.ge</a>
+          <p>
+           наб. Принсенграхт 263-<br/>
+           265, Амстердам
+         </p>
+        </address>
+
     </header>
 
     <main>
       <section class="cover">
         <div class="overlay"></div>
 
-        <h1 class="h1">
+        <h1 class="title_main">
           <span class="letters_up">о<span class="letters_space">но</span></span>
           <span class="letters_center">те<span class="letters_space">бе</span></span>
           <span class="letters_down"><span class="letters_space">н</span>ад<span class="without_space">о</span></span>
         </h1>
 
         <div class="text_cover">
-          <p class="text_main">Аукцион вещей, в которые никто не верил</p>
-          <p class="button">Сделать ставку</p>
+          <p class="text_main">Аукцион вещей<span class="letter_v">, в к</span>оторые никто не верил</p>
+          <button class="button">Сделать ставку</button>
         </div>
       </section>
 
@@ -50,13 +54,14 @@
         <h2 class="text_lots">лоты</h2>
 
         <ul class="lots">
-          <li class="lot first_lot">
-            <a href="#" class="card-link">
+          
+          <li class="lot anderson_lot">
+            <a href="#" class="card_link">
               <article class="text__card">
-                <h3 class="h3_style">
+                <h3 class="title_card_style">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
-                <p class="p3_style">
+                <p class="text_card_style">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
                   Андерсон?
@@ -65,15 +70,14 @@
               <div class="overlay"></div>
             </a>
           </li>
-
-          <a class="card-link"></a>
-          <li class="lot second_lot">
-            <a href="#" class="card-link">
+          
+          <li class="lot joic_lot">
+            <a href="#" class="card_link">
               <article class="text__card">
-                <h3 class="h3_style">
+                <h3 class="title_card_style">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
-                <p class="p3_style">
+                <p class="text_card_style">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
                   рассказывается о 16 июня 1904 года и об истории литературы,
@@ -84,16 +88,14 @@
               </article>
               <div class="overlay"></div>
             </a>
-          </li>
 
-          <a class="card-link"></a>
-          <li class="lot third_lot">
-            <a href="#" class="card-link">
+          <li class="lot kandinskii_lot">
+            <a href="#" class="card_link">
               <article class="text__card">
-                <h3 class="h3_style">
+                <h3 class="title_card_style">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
-                <p class="p3_style">
+                <p class="text_card_style">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                   котиков... Сколько бы вы на такое поставили, если бы не знали,
@@ -105,28 +107,29 @@
           </li>
         </ul>
 
-        <p class="more"><a href="#">посмотреть больше</a></p>
+        <a class="more" href="#">посмотреть больше</a>
+
       </section>
 
       <section class="about">
-        <div class="black_logo">
-          <img class="logo_circle" src="images/logo-white.svg" />
+        <div class="background_logo">
+          <img class="logo_circle" src="images/logo-white.svg" alt="логотип">
         </div>
 
-        <h2 class="h_about">Об аукционе</h2>
+        <h2 class="title_about">Об аукционе</h2>
 
-        <p class="text_about about_first">
-          Здесь вы не встретите очередное пафосное собрание невероятно дорогого
-          антиквариата. Наши лоты вообще не должны были попасть ни на один
-          аукцион. Потому что кому нужен дневник девочки-подростка или картина,
+        <p class="text_about about_top">
+          Здесь вы не встретите очередное <span class="pafos">пафосное собрание невероятно дорогого
+          антиквариата. </span><span class="our">Наши </span>лоты вообще не должны <span class="was">были попасть </span>ни на один
+          аукцион. Потому что кому нужен <span class="diary">дневник </span>девочки-подростка или картина,
           которую может нарисовать даже ребёнок? Кому нужны все эти странные
           вещи, созданные любителями?
         </p>
 
-        <p class="text_about about_second">
+        <p class="text_about about_bottom">
           Слишком сложные или, наоборот, слишком простые. Опережающие своё
           время. В пух и прах растерзанные критиками. Непринятые и непонятые.
-          Когда-то они казались просто неудачными. Но, несмотря на критику,
+          Когда-т<span class="they">о они к</span>азались прост<span class="unhappy">о неудачными. </span>Но, несмотря на критику,
           кажущуюся простоту или сложность, сейчас без этих лотов невозможно
           представить современную культуру. Когда в эти вещи не верил никто,
           продолжали верить их создатели. И сейчас эти лоты стали культовыми.
@@ -135,38 +138,47 @@
     </main>
 
     <footer class="footer">
-      <adress class="contacts_footer">
-        <a href="tel:+70000000">++9 999 555 5555</a><br/>
-        <a href="mailto:mail@example.com">info@sobaka.ge</a>
-        <p>
-          наб. Принсенграхт 263-<br/>
-          265, Амстердам
-        </p>
-      </adress>
+   
+        <address class="contacts contacts_end">
+         <a href="tel:+70000000">+9 999 555 5555</a>
+         <a href="mailto:mail@example.com">info@sobaka.ge</a>
+         <p>
+           наб. Принсенграхт 263-<br/>
+            265, Амстердам
+         </p>
+        </address>
 
-      <ul class="menu_footer">
-        <p>главная</p>
-        <li><a href="#">посмотреть лоты</a></li>
-        <li><a href="#">об аукционе</a></li>
-      </ul>
 
-      <ul class="social_media">
-        <img
+      <nav>
+        <ul class="menu menu_end">
+          <li class="active_point"><a class="no_underline" href="#">главная</a></li>
+          <li><a href="#">посмотреть лоты</a></li>
+          <li><a href="#">об аукционе</a></li>
+        </ul>
+      </nav>
+      <div class="social_media">
+      <a href="#">
+          <img
           class="social_media_icon"
           src="images/yt.svg"
-          alt="Иконка YouTube"
-        />
-        <img
+          alt="Иконка YouTube">
+      </a>
+      
+      <a href="#">
+          <img
           class="social_media_icon"
           src="images/vk.svg"
-          alt="Иконка ВКонтакте"
-        />
-        <img
+          alt="Иконка ВКонтакте">
+        </a>
+
+         <a href="#">
+          <img
           class="social_media_icon"
           src="images/pinterest.svg"
-          alt="Иконка Pinterest"
-        />
-      </ul>
+          alt="Иконка Pinterest">
+        </a>
+        </div>
+
     </footer>
   </body>
 </html>
