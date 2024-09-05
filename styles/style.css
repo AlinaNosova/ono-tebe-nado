@@ -11,8 +11,6 @@
   grid-template-columns: 1fr min-content 1fr;
   margin: 92px 24px 96px 24px;
   width: 1052px;
-  min-height: 105px;
-  max-height: 100vh;
 }
 
 .logo {
@@ -30,14 +28,13 @@
   font-weight: 400;
   padding: 44px 26px 0 26px;
   letter-spacing: 0.01em;
-
 }
 
 .active_point {
   list-style-type: none;
 }
 
-.no_underline {
+.active {
   text-decoration: none;
 }
 
@@ -49,7 +46,6 @@
   font-weight: 400;
   margin-top: 7px;
   margin-left: 184px;
-  min-height: 98px;
   font-style: normal;
   line-height: 24.3px;
   letter-spacing: 0.01em;
@@ -90,11 +86,12 @@
 
 .letters_center {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 7px;
 }
 
 .letters_down {
   text-align: right;
+  margin-top: 7px;
 }
 
 .letters_space {
@@ -117,7 +114,7 @@
   z-index: 2;
 }
 
-.letter_v {
+.letter_one {
   letter-spacing: 0.1em;
 }
 
@@ -182,21 +179,22 @@
   flex-direction: column;
   background-size: cover;
   background-position: center;
-  flex-grow: 1;
-  min-width: 334px;
   min-height: 563px;
+  flex-basis: 334px;
+  flex-grow: 1;
+  flex-shrink: 0;
 }
 
 .text__card {
   display: flex;
+  flex-grow: 1;
   position: relative;
   z-index: 2;
   height: 100%;
   padding: 51px 40px 48px 40px;
   flex-direction: column;
   justify-content: space-between;
-  color: white;
-  max-width: 334px;
+  color: rgb(255, 255, 255);
 }
 
 .title_card_style {
@@ -211,12 +209,15 @@
   font-weight: 400;
 }
 
+.letters_thirteen {
+  letter-spacing: 0.13em;
+}
+
 .overlay {
   display: flex;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.6);
   inset: 0px;
-
 } 
 
 .more {
@@ -256,20 +257,20 @@
   line-height: 24px;
 }
 
-.pafos {
-  letter-spacing:normal;
+.letter_normal {
+  letter-spacing: normal;
 }
 
-.our {
-letter-spacing: 0.02em;
+.letter_two {
+  letter-spacing: 0.02em;
 }
 
-.was {
-letter-spacing: -0.01em;
+.letter_minus_one {
+  letter-spacing: -0.01em;
 }
 
-.diary {
-letter-spacing: 0.03em;
+.letter_three {
+  letter-spacing: 0.03em;
 }
 
 .about_bottom {
@@ -278,12 +279,8 @@ letter-spacing: 0.03em;
   line-height: 24px;
 }
 
-.they {
+.letter_four {
   letter-spacing: 0.04em;
-}
-
-.unhappy {
-letter-spacing: 0.01em;
 }
 
 .background_logo {
