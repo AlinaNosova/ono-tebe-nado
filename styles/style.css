@@ -114,7 +114,7 @@
   z-index: 2;
 }
 
-.letter_one {
+.letter_text_main {
   letter-spacing: 0.1em;
 }
 
@@ -209,7 +209,7 @@
   font-weight: 400;
 }
 
-.letters_thirteen {
+.letters_text_card_style {
   letter-spacing: 0.13em;
 }
 
@@ -261,15 +261,15 @@
   letter-spacing: normal;
 }
 
-.letter_two {
+.letter_about_top {
   letter-spacing: 0.02em;
 }
 
-.letter_minus_one {
+.letter_about_top_minus {
   letter-spacing: -0.01em;
 }
 
-.letter_three {
+.letter_about_top_big {
   letter-spacing: 0.03em;
 }
 
